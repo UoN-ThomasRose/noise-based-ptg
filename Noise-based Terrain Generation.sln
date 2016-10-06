@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noise-based Terrain Generation.CSharp.Plugins", "Noise-based Terrain Generation.CSharp.Plugins.csproj", "{3C6D9BB4-5F5B-33CD-7C09-9B314E563BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noise-based Terrain Generation.CSharp", "Noise-based Terrain Generation.CSharp.csproj", "{8537F65A-9078-C2A8-F568-78010EEE7AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noise-based Terrain Generation.CSharp.Editor", "Noise-based Terrain Generation.CSharp.Editor.csproj", "{003A303D-971D-7338-6378-BC46FE6F6106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C6D9BB4-5F5B-33CD-7C09-9B314E563BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6D9BB4-5F5B-33CD-7C09-9B314E563BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6D9BB4-5F5B-33CD-7C09-9B314E563BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6D9BB4-5F5B-33CD-7C09-9B314E563BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8537F65A-9078-C2A8-F568-78010EEE7AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8537F65A-9078-C2A8-F568-78010EEE7AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8537F65A-9078-C2A8-F568-78010EEE7AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8537F65A-9078-C2A8-F568-78010EEE7AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003A303D-971D-7338-6378-BC46FE6F6106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003A303D-971D-7338-6378-BC46FE6F6106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003A303D-971D-7338-6378-BC46FE6F6106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003A303D-971D-7338-6378-BC46FE6F6106}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
