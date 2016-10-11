@@ -1,22 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DiamondSquare : MonoBehaviour {
+public static class DiamondSquare {
 
-    private int dimension;
-    Terrain myTerrain = Terrain.activeTerrain;
-
-	// Use this for initialization
-	void Start () {
+    public static float [,] GenerateNoiseMap() {
         adjustDimensions();
-	}
 
-    void adjustDimensions() {
-        dimension = myTerrain.terrainData.heightmapHeight;
+        //TODO: Add the main algorithm
+
+        return null;
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    private static void adjustDimensions() {
+        //TODO: Write a method for making sure the dimensions of the noise map are viable for the algorithm
+    }
 }

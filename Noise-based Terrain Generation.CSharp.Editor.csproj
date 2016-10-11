@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Editor\DiamondSquareGenEditor.cs" />
     <Compile Include="Assets\Editor\PerlinGenEditor.cs" />
     <Compile Include="Assets\Editor\WorleyGenEditor.cs" />
   </ItemGroup>

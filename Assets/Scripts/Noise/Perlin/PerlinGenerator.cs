@@ -45,10 +45,6 @@ public class PerlinGenerator : MonoBehaviour {
         GenerateMap();
     }
 
-    void Update() {
-        //GenerateMap();
-    }
-
     [ExecuteInEditMode]
     void OnValidate() {
         offset.x = Mathf.Clamp(offset.x, -1000, 1000);

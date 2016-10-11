@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WorleyGenerator : MonoBehaviour {
+public class DiamondSquareGenerator : MonoBehaviour {
 
     public int seed;
     [Range(128, 512)] public int dimension;
-    [Range(1, 1)] public int n;
-    [Range(5, 20)] public int nFeatures;
+    [Range(0, 100)] public int roughness;
     public bool autoUpdate;
     Terrain terrainMesh;
 
     public void GenerateMap() {
         terrainMesh = GetComponent<Terrain>();
-        float[,] noiseMap = Worley.GenerateNoiseMap(seed, dimension, n, nFeatures);
+        float[,] noiseMap = DiamondSquare.GenerateNoiseMap(/*args*/);
         TerrainGenerator.GenerateTerrainMesh(terrainMesh, noiseMap, true);
     }
 

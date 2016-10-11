@@ -2,11 +2,12 @@
 using UnityEditor;
 using System.Collections;
 
-[CustomEditor(typeof(WorleyGenerator))]
-public class WorleyGenEditor : Editor {
+[CustomEditor(typeof(DiamondSquareGenerator))]
+public class DiamondSquareGenEditor : Editor {
+
 
     public override void OnInspectorGUI() {
-        WorleyGenerator mapGen = (WorleyGenerator)target;
+        DiamondSquareGenerator mapGen = (DiamondSquareGenerator)target;
 
         if (DrawDefaultInspector())
             if (mapGen.autoUpdate)
