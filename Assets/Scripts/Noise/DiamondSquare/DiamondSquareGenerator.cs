@@ -11,7 +11,7 @@ public class DiamondSquareGenerator : MonoBehaviour {
 
     public void GenerateMap() {
         terrainMesh = GetComponent<Terrain>();
-        float[,] noiseMap = DiamondSquare.GenerateNoiseMap(/*args*/);
+        float[,] noiseMap = DiamondSquare.GenerateNoiseMap(seed, dimension, roughness);
         TerrainGenerator.GenerateTerrainMesh(terrainMesh, noiseMap, true);
     }
 
