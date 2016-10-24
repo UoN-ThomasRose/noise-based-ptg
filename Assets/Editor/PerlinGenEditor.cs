@@ -8,9 +8,13 @@ public class PerlinGenEditor : Editor {
     public override void OnInspectorGUI() {
         PerlinGenerator mapGen = (PerlinGenerator)target;
 
-        if (DrawDefaultInspector())
-            if (mapGen.autoUpdate)
+        if (DrawDefaultInspector()) {
+            if (mapGen.autoUpdate) {
+                mapGen.flattenMap();
                 mapGen.GenerateMap();
+            }
+        }
+                
 
         if(GUILayout.Button("Generate")) {
             mapGen.GenerateMap();

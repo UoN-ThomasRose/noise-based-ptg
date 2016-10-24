@@ -24,10 +24,7 @@ public static class TerrainGenerator {
                     break;
                 }              
             }
-            //Debug.Log(currentMap[x, 0]);
         }
-
-        //Debug.Log(blankMap);
 
         if (meldNoise & !blankMap) { // Combinational Noise Code
             float[,] newHeights = new float[dimension, dimension];
@@ -40,8 +37,6 @@ public static class TerrainGenerator {
         } else { // Do not combine noise...
             td.SetHeights(0, 0, heightmap); // Set the terrain mesh heights
         }
-
-        
 
         terrainMesh.Flush();
     }

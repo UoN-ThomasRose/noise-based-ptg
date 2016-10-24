@@ -4,6 +4,7 @@ using System.Collections;
 public class PerlinGenerator : MonoBehaviour {
 
     public int seed;
+    public bool usingSeed;
     [Range(128, 512)] public int dimension;
     [Range(2f,100f)] public float noiseScale;
     [Range(1,10)] public int octaves;
@@ -17,8 +18,13 @@ public class PerlinGenerator : MonoBehaviour {
 
     public void GenerateMap() {
         terrainMesh = GetComponent<Terrain>();
-        float[,] noiseMap = Perlin.GenerateNoiseMap(seed, dimension, noiseScale, octaves, persistence, lacunarity, offset);
-        TerrainGenerator.GenerateTerrainMesh(terrainMesh, noiseMap, true);
+        if (usingSeed) {
+            float[,] noiseMap = Perlin.GenerateNoiseMap(seed, dimension, noiseScale, octaves, persistence, lacunarity, offset);
+            TerrainGenerator.GenerateTerrainMesh(terrainMesh, noiseMap, true);
+        } else {
+            float[,] noiseMap = Perlin.GenerateNoiseMap(0, dimension, noiseScale, octaves, persistence, lacunarity, offset);
+            TerrainGenerator.GenerateTerrainMesh(terrainMesh, noiseMap, true);
+        }    
     }
 
     public void flattenMap() {
