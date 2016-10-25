@@ -7,13 +7,13 @@ public static class TerrainGenerator {
         TerrainData td = terrainMesh.terrainData;
         int dimension = heightmap.GetLength(0);
 
-        // Get the existing map data
-        float[,] currentMap = td.GetHeights(0, 0, dimension, dimension);
-
         td.baseMapResolution = heightmap.GetLength(0);
         td.heightmapResolution = heightmap.GetLength(0);
         int pps = 5; // pixels-per-sample
         td.size = new Vector3((float)heightmap.GetLength(0) * pps, 255f, (float)heightmap.GetLength(1) * pps);
+
+        // Get the existing map data
+        float[,] currentMap = td.GetHeights(0, 0, dimension, dimension);
 
         // Check if map is blank
         bool blankMap = true;

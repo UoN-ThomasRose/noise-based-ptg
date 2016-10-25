@@ -20,6 +20,6 @@ Noise-based procedural terrain generation in Unity
 
 ## Latest Changes
 
-* Perlin class has been reworked and trimmed down. Unneccessary overloading has been removed.
-* Perlin class seedless noise generation now works with user-defined offset values.
-* Started implementation on the Diamond-Square Algorithm.
+* Perlin Noise inspector has been re-implemented as a custom inspector. (25/10/2016)
+* Auto-update has been removed from the new Perlin Noise inspector as it was no longer working. Hopefully, it will be added back in the near future. (25/10/2016)
+* Old Perlin.GenerateNoiseMap() method has been marked as deprecated. (25/10/2016)

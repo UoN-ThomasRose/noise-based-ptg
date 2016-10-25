@@ -4,6 +4,7 @@ using System.Collections;
 public static class Perlin {
 
     // Single Octave - no seed
+    [System.Obsolete("This method is deprecated. Please use public static float[,] GenerateNoiseMap(int seed, int dimension, float scale, int octaves, float persistence, float lacunarity, Vector2 offset)")]
 	public static float [,] GenerateNoiseMap(int dimension, float scale) {
         float[,] map = new float[dimension, dimension];
 
